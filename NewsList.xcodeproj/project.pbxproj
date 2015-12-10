@@ -14,6 +14,10 @@
 		3F1C56911C18BE8F00290638 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C56901C18BE8F00290638 /* Images.xcassets */; };
 		3F1C56941C18BE8F00290638 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C56921C18BE8F00290638 /* LaunchScreen.xib */; };
 		3F1C56A01C18BE9000290638 /* NewsListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C569F1C18BE9000290638 /* NewsListTests.m */; };
+		3F1C56AD1C18BF7100290638 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C56AC1C18BF7100290638 /* FirstViewController.m */; };
+		3F1C56B31C18C02800290638 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C56B21C18C02800290638 /* TableViewCell.m */; };
+		3F1C56BA1C18CD7700290638 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C56B91C18CD7700290638 /* News.m */; };
+		3FC3FF081C1A07A10092220F /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3FF071C1A07A10092220F /* ResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		3F1C56991C18BE9000290638 /* NewsListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1C569E1C18BE9000290638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1C569F1C18BE9000290638 /* NewsListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTests.m; sourceTree = "<group>"; };
+		3F1C56AB1C18BF7100290638 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3F1C56AC1C18BF7100290638 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3F1C56B11C18C02800290638 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		3F1C56B21C18C02800290638 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		3F1C56B81C18CD7700290638 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		3F1C56B91C18CD7700290638 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		3FC3FF061C1A07A10092220F /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		3FC3FF071C1A07A10092220F /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +93,13 @@
 		3F1C56821C18BE8F00290638 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				3F1C56B41C18C8C400290638 /* Model */,
+				3F1C56AA1C18BEA500290638 /* Controller */,
+				3F1C56A91C18BE9B00290638 /* View */,
 				3F1C56871C18BE8F00290638 /* AppDelegate.h */,
 				3F1C56881C18BE8F00290638 /* AppDelegate.m */,
 				3F1C568A1C18BE8F00290638 /* ViewController.h */,
 				3F1C568B1C18BE8F00290638 /* ViewController.m */,
-				3F1C568D1C18BE8F00290638 /* Main.storyboard */,
 				3F1C56901C18BE8F00290638 /* Images.xcassets */,
 				3F1C56921C18BE8F00290638 /* LaunchScreen.xib */,
 				3F1C56831C18BE8F00290638 /* Supporting Files */,
@@ -117,6 +131,36 @@
 				3F1C569E1C18BE9000290638 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F1C56A91C18BE9B00290638 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C568D1C18BE8F00290638 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F1C56AA1C18BEA500290638 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C56AB1C18BF7100290638 /* FirstViewController.h */,
+				3F1C56B11C18C02800290638 /* TableViewCell.h */,
+				3F1C56B21C18C02800290638 /* TableViewCell.m */,
+				3F1C56AC1C18BF7100290638 /* FirstViewController.m */,
+				3FC3FF061C1A07A10092220F /* ResultViewController.h */,
+				3FC3FF071C1A07A10092220F /* ResultViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F1C56B41C18C8C400290638 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C56B81C18CD7700290638 /* News.h */,
+				3F1C56B91C18CD7700290638 /* News.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1C568C1C18BE8F00290638 /* ViewController.m in Sources */,
+				3F1C56BA1C18CD7700290638 /* News.m in Sources */,
 				3F1C56891C18BE8F00290638 /* AppDelegate.m in Sources */,
 				3F1C56861C18BE8F00290638 /* main.m in Sources */,
+				3F1C56B31C18C02800290638 /* TableViewCell.m in Sources */,
+				3F1C56AD1C18BF7100290638 /* FirstViewController.m in Sources */,
+				3FC3FF081C1A07A10092220F /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +464,7 @@
 				3F1C56A51C18BE9000290638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F1C56A61C18BE9000290638 /* Build configuration list for PBXNativeTarget "NewsListTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +473,7 @@
 				3F1C56A81C18BE9000290638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
